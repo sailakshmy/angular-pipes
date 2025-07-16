@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { DatePipe } from "@angular/common";
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  templateUrl: './app.component.html',
+  templateUrl: "./app.component.html",
+  imports: [DatePipe],
 })
 export class AppComponent {
   currentDate = new Date();
